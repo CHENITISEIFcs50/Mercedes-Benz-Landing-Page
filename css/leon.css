@@ -6,6 +6,8 @@
 }
 body {
     font-family: "work sans", sans-serif;
+    min-width: 1200px;
+    overflow-x: auto;
 }
 /* end global rules */
 /* @media (max-width: 1199px) {
@@ -13,6 +15,27 @@ body {
     display: none;
   }
 } */
+/* الكود الافتراضي هنا يكون مخصصاً للهواتف (الشاشات الصغيرة) */
+body {
+    font-size: 14px;
+    padding: 10px;
+}
+
+
+/* 📱 للأجهزة اللوحية (التابلت) - الشاشات الأكبر من 640 بكسل */
+@media (min-width: 640px) {
+    body {
+        font-size: 16px;
+    }
+}
+
+/* 💻 لأجهزة الحواسيب (الاب توب) - الشاشات الأكبر من 1024 بكسل */
+@media (min-width: 1024px) {
+    body {
+        font-size: 18px;
+        padding: 40px;
+    }
+}
 @media (max-width: 768px) {
   #special-heading {
     font-size: 60px;
