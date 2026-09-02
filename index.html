@@ -1,22 +1,28 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mercedes-Benz | Iconic Models</title>
-  <!-- main template css file -->
-  <link rel="stylesheet" href="css/leon.css" />
-  <!-- render all elements normally -->
-  <link rel="stylesheet" href="css/normalize.css" />
-  <!-- google font -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-  <!-- css tailwind -->
-  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-  <script src="https://kit.fontawesome.com/24b8c51039.js" crossorigin="anonymous"></script>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mercedes-Benz | Iconic Models</title>
+    <!-- main template css file -->
+    <link rel="stylesheet" href="css/leon.css" />
+    <!-- render all elements normally -->
+    <link rel="stylesheet" href="css/normalize.css" />
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- css tailwind -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script
+      src="https://kit.fontawesome.com/24b8c51039.js"
+      crossorigin="anonymous"
+    ></script>
 
-  <!--
+    <!--
     ===================================================================
     ملاحظة: هاذو القواعد يخدمو بـ !important قصدا. جربنا الـ flex/before/after
     بواسطة Tailwind classes مرتين وماخدموش فالمتصفح الحقيقي متاعك (صورة السيرفيس
@@ -25,238 +31,434 @@
     الـ class). إذا بعتلي leon.css نقدر نلغي هاذ الـ !important وندير نسخة أنظف.
     ===================================================================
   -->
-  <style>
-    #leading{
-      position:relative; display:flex!important; align-items:center;
-      justify-content:center; min-height:100vh; overflow:hidden;
-    }
-    #leading .overlay{
-      position:absolute; inset:0; background:#000; opacity:.45;
-    }
-    #services-content #col1 img{
-      max-width:100%!important; width:100%!important; height:auto!important;
-      display:block; border-radius:6px;
-    }
-    #about .about-flex{
-      display:flex!important; flex-wrap:wrap; justify-content:space-between;
-      align-items:flex-start; gap:20px;
-    }
-    #about .about-img-wrap{
-      position:relative; display:inline-block;
-    }
-    #about .about-accent-1{
-      position:absolute; z-index:-1; top:-20px; right:-40px;
-      width:120px; height:300px; background:#10cab7;
-    }
-    #about .about-accent-2{
-      position:absolute; z-index:-1; top:0; right:-20px;
-      width:100px; height:100%; background:#10cab7;
-    }
-    #nav-menu.hidden{ display:none!important; }
-  </style>
-</head>
-<body>
-  <div class="header">
-    <div class="flex items-center justify-between">
-      <img class="image w-24" src="https://pngimg.com/uploads/mercedes_logos/mercedes_logos_PNG1.png" alt="Mercedes-Benz logo" />
-      <div class="relative" id="links">
-        <span class="icon flex flex-col justify-between w-8 h-5 cursor-pointer items-end">
-          <span class="bg-gray-950 w-full h-0.5"></span>
-          <span class="bg-gray-950 w-3/5 h-0.5 hover:w-full duration-700"></span>
-          <span class="bg-gray-950 w-full h-0.5"></span>
-        </span>
-        <ul id="nav-menu" class="hidden">
-          <li><a href="#services">Highlights</a></li>
-          <li><a href="#portfolio">Models</a></li>
-          <li><a href="#about">Heritage</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </div>
-    </div>
-  </div>
-  <!-- end header -->
-
-  <!-- start leading section -->
-  <div id="leading" class="bg-[url(https://group.mercedes-benz.com/bilder/karriere/ueber-uns/standorte/ndl-locations/ndl-stuttgart-w1920xh1080-cutout.jpg)] text-white ">
-    <div class="overlay"></div>
-    <div id="intro" class="relative ml-96 text-center max-w-full">
-      <h1 id="intro1" class="m-0 text-center">Mercedes-Benz</h1>
-      <p class="text-lg m-0 leading-6">The Best or Nothing — a century of engineering excellence, since 1926.</p>
-    </div>
-  </div>
-  <!-- end leading section -->
-
-  <!-- start Features -->
-  <div id="Features" class="pt-[60px] pb-[60px] px-[50px] bg-white">
-    <div id="container" class="grid md:grid-cols-3 gap-4">
-      <div id="feat">
-        <i id="text" class="fas fa-bolt fa-3x"></i>
-        <h3 class="font-extrabold mt-[30px] mb-[30px]">AMG Performance</h3>
-        <p class="leading-6 text-[#777] text-lg">From twin-turbo V8s to hybrid AMG powertrains, every performance model is engineered for sports-car acceleration without giving up everyday comfort.</p>
-      </div>
-      <div id="feat">
-        <i id="text" class="fas fa-gem fa-3x"></i>
-        <h3 class="font-extrabold mt-[30px] mb-[30px]">Handcrafted Luxury</h3>
-        <p class="leading-6 text-[#777] text-lg">Nappa leather, Burmester sound, and meticulous craftsmanship define the cabin of every Mercedes-Benz, from the compact class to the Maybach flagship.</p>
-      </div>
-      <div id="feat">
-        <i id="text" class="fas fa-globe-asia fa-3x"></i>
-        <h3 class="mt-[30px] mb-[30px] font-extrabold">A Global Icon</h3>
-        <p class="leading-6 text-[#777] text-lg">From the Stuttgart design studio to roads on every continent, the three-pointed star has stood for automotive leadership for nearly 100 years.</p>
-      </div>
-    </div>
-  </div>
-  <!-- end features -->
-
-  <!-- start services -->
-  <div id="services" class="pt-[60px] pb-[60px] bg-[#f6f6f6]">
-    <div id="container">
-      <h2 id="special-heading" class="text-[#ebeced] text-8xl text-center font-extrabold tracking-wide m-0">Highlights</h2>
-      <p class="mt-[-30px] text-center text-[#797979]">What defines every Mercedes-Benz</p>
-      <div id="services-content" class="grid md:grid-cols-[repeat(auto-fill,minmax(400px,1fr))] gap-4 mt-[100px]">
-        <div id="col" class="md:col-span-2 grid sm:grid-cols-2 gap-3">
-          <!-- start service -->
-          <div id="src" class="flex mb-[40px]">
-            <i class="text-[#10cab7] basis-40 fas fa-palette fa-2x"></i>
-            <div id="text1" class="flex-1">
-              <h3 class="mb-[20px]">Iconic Design</h3>
-              <p class="text-[#777] font-light text-base/6">A design language that stays instantly recognizable across generations, from the upright G-Class to the sweeping lines of the S-Class.</p>
-            </div>
-          </div>
-          <div id="src" class="flex mb-[40px]">
-            <i class="text-[#10cab7] basis-40 fas fa-microchip fa-2x"></i>
-            <div id="text1" class="flex-1">
-              <h3 class="mb-[20px]">Advanced Technology</h3>
-              <p class="text-[#777] font-light text-base/6">Dual digital displays, MBUX voice control, and driver-assistance systems bring every model's cabin into the future.</p>
-            </div>
-          </div>
-          <div id="src" class="flex mb-[40px]">
-            <i class="text-[#10cab7] basis-40 fas fa-gauge-high fa-2x"></i>
-            <div id="text1" class="flex-1">
-              <h3 class="mb-[20px]">Powerful Performance</h3>
-              <p class="text-[#777] font-light text-base/6">V8 and V12 engines, AMG tuning, and hybrid systems give the lineup everything from silent cruising to sports-car acceleration.</p>
-            </div>
-          </div>
-          <div id="src" class="flex mb-[40px]">
-            <i class="text-[#10cab7] basis-40 fas fa-pencil-ruler fa-2x"></i>
-            <div id="text1" class="flex-1">
-              <h3 class="mb-[20px]">Precision Engineering</h3>
-              <p class="text-[#777] font-light text-base/6">From the G-Class's ladder-frame chassis to the Maybach's hand-built V12, every component is built to exacting German standards.</p>
-            </div>
-          </div>
+    <style>
+      #leading {
+        position: relative;
+        display: flex !important;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+        overflow: hidden;
+      }
+      #leading .overlay {
+        position: absolute;
+        inset: 0;
+        background: #000;
+        opacity: 0.45;
+      }
+      #services-content #col1 img {
+        max-width: 100% !important;
+        width: 100% !important;
+        height: auto !important;
+        display: block;
+        border-radius: 6px;
+      }
+      #about .about-flex {
+        display: flex !important;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: flex-start;
+        gap: 20px;
+      }
+      #about .about-img-wrap {
+        position: relative;
+        display: inline-block;
+      }
+      #about .about-accent-1 {
+        position: absolute;
+        z-index: -1;
+        top: -20px;
+        right: -40px;
+        width: 120px;
+        height: 300px;
+        background: #10cab7;
+      }
+      #about .about-accent-2 {
+        position: absolute;
+        z-index: -1;
+        top: 0;
+        right: -20px;
+        width: 100px;
+        height: 100%;
+        background: #10cab7;
+      }
+      #nav-menu.hidden {
+        display: none !important;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <div class="flex items-center justify-between">
+        <img
+          class="image w-24"
+          src="https://pngimg.com/uploads/mercedes_logos/mercedes_logos_PNG1.png"
+          alt="Mercedes-Benz logo"
+        />
+        <div class="relative" id="links">
+          <span
+            class="icon flex flex-col justify-between w-8 h-5 cursor-pointer items-end"
+          >
+            <span class="bg-gray-950 w-full h-0.5"></span>
+            <span
+              class="bg-gray-950 w-3/5 h-0.5 hover:w-full duration-700"
+            ></span>
+            <span class="bg-gray-950 w-full h-0.5"></span>
+          </span>
+          <ul id="nav-menu" class="hidden">
+            <li><a href="#services">Highlights</a></li>
+            <li><a href="#portfolio">Models</a></li>
+            <li><a href="#about">Heritage</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
         </div>
-        <div id="col1" class="text-center relative after:content[''] z-20 w-[280px] object-cover block rounded-xs ease-cubic-bezier(0.4, 0, 1, 1) transition-shadow transition-transform duration-300 hover:shadow-lg hover:scale-[1.05]">
-          <!-- ⚠️ هاذي كانت الصورة لي طلعت جبل كبير: الملف "photo_2026-07-30_19-15-03.jpg" في مسارك المحلي
+      </div>
+    </div>
+    <!-- end header -->
+
+    <!-- start leading section -->
+    <div
+      id="leading"
+      class="bg-[url(https://group.mercedes-benz.com/bilder/karriere/ueber-uns/standorte/ndl-locations/ndl-stuttgart-w1920xh1080-cutout.jpg)] text-white"
+    >
+      <div class="overlay"></div>
+      <div id="intro" class="relative ml-96 text-center max-w-full">
+        <h1 id="intro1" class="m-0 text-center">Mercedes-Benz</h1>
+        <p class="text-lg m-0 leading-6">
+          The Best or Nothing — a century of engineering excellence, since 1926.
+        </p>
+      </div>
+    </div>
+    <!-- end leading section -->
+
+    <!-- start Features -->
+    <div id="Features" class="pt-[60px] pb-[60px] px-[50px] bg-white">
+      <div id="container" class="grid grid-cols-3 gap-4">
+        <div id="feat">
+          <i id="text" class="fas fa-bolt fa-3x"></i>
+          <h3 class="font-extrabold mt-[30px] mb-[30px]">AMG Performance</h3>
+          <p class="leading-6 text-[#777] text-lg">
+            From twin-turbo V8s to hybrid AMG powertrains, every performance
+            model is engineered for sports-car acceleration without giving up
+            everyday comfort.
+          </p>
+        </div>
+        <div id="feat">
+          <i id="text" class="fas fa-gem fa-3x"></i>
+          <h3 class="font-extrabold mt-[30px] mb-[30px]">Handcrafted Luxury</h3>
+          <p class="leading-6 text-[#777] text-lg">
+            Nappa leather, Burmester sound, and meticulous craftsmanship define
+            the cabin of every Mercedes-Benz, from the compact class to the
+            Maybach flagship.
+          </p>
+        </div>
+        <div id="feat">
+          <i id="text" class="fas fa-globe-asia fa-3x"></i>
+          <h3 class="mt-[30px] mb-[30px] font-extrabold">A Global Icon</h3>
+          <p class="leading-6 text-[#777] text-lg">
+            From the Stuttgart design studio to roads on every continent, the
+            three-pointed star has stood for automotive leadership for nearly
+            100 years.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- end features -->
+
+    <!-- start services -->
+    <div id="services" class="pt-[60px] pb-[60px] bg-[#f6f6f6]">
+      <div id="container">
+        <h2
+          id="special-heading"
+          class="text-[#ebeced] text-8xl text-center font-extrabold tracking-wide m-0"
+        >
+          Highlights
+        </h2>
+        <p class="mt-[-30px] text-center text-[#797979]">
+          What defines every Mercedes-Benz
+        </p>
+        <div
+          id="services-content"
+          class="grid md:grid-cols-[repeat(auto-fill,minmax(400px,1fr))] gap-4 mt-[100px]"
+        >
+          <div id="col" class="col-span-2 grid grid-cols-2 gap-3">
+            <!-- start service -->
+            <div id="src" class="flex mb-[40px]">
+              <i class="text-[#10cab7] basis-40 fas fa-palette fa-2x"></i>
+              <div id="text1" class="flex-1">
+                <h3 class="mb-[20px]">Iconic Design</h3>
+                <p class="text-[#777] font-light text-base/6">
+                  A design language that stays instantly recognizable across
+                  generations, from the upright G-Class to the sweeping lines of
+                  the S-Class.
+                </p>
+              </div>
+            </div>
+            <div id="src" class="flex mb-[40px]">
+              <i class="text-[#10cab7] basis-40 fas fa-microchip fa-2x"></i>
+              <div id="text1" class="flex-1">
+                <h3 class="mb-[20px]">Advanced Technology</h3>
+                <p class="text-[#777] font-light text-base/6">
+                  Dual digital displays, MBUX voice control, and
+                  driver-assistance systems bring every model's cabin into the
+                  future.
+                </p>
+              </div>
+            </div>
+            <div id="src" class="flex mb-[40px]">
+              <i class="text-[#10cab7] basis-40 fas fa-gauge-high fa-2x"></i>
+              <div id="text1" class="flex-1">
+                <h3 class="mb-[20px]">Powerful Performance</h3>
+                <p class="text-[#777] font-light text-base/6">
+                  V8 and V12 engines, AMG tuning, and hybrid systems give the
+                  lineup everything from silent cruising to sports-car
+                  acceleration.
+                </p>
+              </div>
+            </div>
+            <div id="src" class="flex mb-[40px]">
+              <i class="text-[#10cab7] basis-40 fas fa-pencil-ruler fa-2x"></i>
+              <div id="text1" class="flex-1">
+                <h3 class="mb-[20px]">Precision Engineering</h3>
+                <p class="text-[#777] font-light text-base/6">
+                  From the G-Class's ladder-frame chassis to the Maybach's
+                  hand-built V12, every component is built to exacting German
+                  standards.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div
+            id="col1"
+            class="text-center relative after:content[''] z-20 w-[280px] object-cover block rounded-xs ease-cubic-bezier(0.4, 0, 1, 1) transition-shadow transition-transform duration-300 hover:shadow-lg hover:scale-[1.05]"
+          >
+            <!-- ⚠️ هاذي كانت الصورة لي طلعت جبل كبير: الملف "photo_2026-07-30_19-15-03.jpg" في مسارك المحلي
                راهو فعلا صورة جبل، ماشي سيارة. بدلها بصورة مرسيدس باش تبان صح، الحجم دابا محكوم فيه. -->
-          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVw_ZmyvzG6vweEqPWI_PV7FlC_-JJWz1osAmRLnWYPA&s=10" alt="Mercedes-Benz detail" />
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- end service -->
-   <!-- start Portfolio -->
-  <div id="portfolio" class="pt-[60px] pb-[60px] bg-[#f6f6f6] text-center">
-    <div id="container">
-      <h2 id="special-heading" class="text-[#ebeced] text-8xl text-center font-extrabold tracking-wide m-5">Models</h2>
-      <p class="mt-[-30px] text-center text-[#797979]">A closer look at three icons of the range</p>
-      <div id="portfolio-content" class="grid md:grid-cols-[repeat(auto-fill,minmax(500px,1fr))] gap-3 mt-[80px]">
-        <div id="colm" class="md:col-span-3 grid sm:grid-cols-3 gap-3 text-center bg-[#10cab7]">
-          <div id="src" class="m-[40px] p-10 bg-white z-20 w-[400px] object-cover block rounded-xs ease-cubic-bezier(0.4, 0, 1, 1) transition-shadow transition-transform duration-300 hover:shadow-lg hover:scale-[1.05]">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvWDLfYeD95-okkOmGOzFgvJ56wzwLYk7psb8Pz3eC8cBP65xWYmjfU96D&s=10" alt="Mercedes-Maybach S680" style="max-width:100%;height:auto;" />
-            <div id="card">
-              <h1>Maybach S680</h1>
-              <p class="text-[#777]">The pinnacle of the range. A handcrafted twin-turbo V12 delivers effortless power beneath a cabin built for those who are chauffeured, not just driven.</p>
-            </div>
-          </div>
-          <div id="src" class="m-[40px] p-10 bg-white z-20 w-[400px] object-cover block rounded-xs ease-cubic-bezier(0.4, 0, 1, 1) transition-shadow transition-transform duration-300 hover:shadow-lg hover:scale-[1.05]">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4TrvBbTj8wQHS51KYvJJ618ye_A0MgrolU33jnkYosg&s=10" alt="Mercedes-AMG S63" style="max-width:100%;height:auto;" />
-            <div id="card">
-              <h1>S63 AMG</h1>
-              <p class="text-[#777]">Luxury meets raw performance. A twin-turbo V8 hybrid powertrain gives this full-size sedan sports-car acceleration without losing S-Class refinement.</p>
-            </div>
-          </div>
-          <div id="src" class="m-[40px] p-10 bg-white z-20 w-[400px] object-cover block rounded-xs ease-cubic-bezier(0.4, 0, 1, 1) transition-shadow transition-transform duration-300 hover:shadow-lg hover:scale-[1.05]">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbl_Mf_9GpAgUsR4iJ3uPsqDpMBJOGz1k072__wopQ1Rlsa8rmXntTL21z&s=10" alt="Mercedes-Benz G-Class" style="max-width:100%;height:auto;" />
-            <div id="card">
-              <h1>G-Class</h1>
-              <p class="text-[#777]">An off-road icon since 1979. Its unmistakable boxy silhouette and ladder-frame chassis pair legendary trail capability with true luxury-SUV comfort.</p>
-            </div>
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVw_ZmyvzG6vweEqPWI_PV7FlC_-JJWz1osAmRLnWYPA&s=10"
+              alt="Mercedes-Benz detail"
+            />
           </div>
         </div>
       </div>
     </div>
-  </div>
-  <!-- end portfolio -->
+    <!-- end service -->
+    <!-- start Portfolio -->
+    <div id="portfolio" class="pt-[60px] pb-[60px] bg-[#f6f6f6] text-center">
+      <div id="container">
+        <h2
+          id="special-heading"
+          class="text-[#ebeced] text-8xl text-center font-extrabold tracking-wide m-5"
+        >
+          Models
+        </h2>
+        <p class="mt-[-30px] text-center text-[#797979]">
+          A closer look at three icons of the range
+        </p>
+        <div
+          id="portfolio-content"
+          class="grid md:grid-cols-[repeat(auto-fill,minmax(500px,1fr))] gap-3 mt-[80px]"
+        >
+          <div
+            id="colm"
+            class="md:col-span-3 grid sm:grid-cols-3 gap-3 text-center bg-[#10cab7]"
+          >
+            <div
+              id="src"
+              class="m-[40px] p-10 bg-white z-20 w-[400px] object-cover block rounded-xs ease-cubic-bezier(0.4, 0, 1, 1) transition-shadow transition-transform duration-300 hover:shadow-lg hover:scale-[1.05]"
+            >
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvWDLfYeD95-okkOmGOzFgvJ56wzwLYk7psb8Pz3eC8cBP65xWYmjfU96D&s=10"
+                alt="Mercedes-Maybach S680"
+                style="max-width: 100%; height: auto"
+              />
+              <div id="card">
+                <h1>Maybach S680</h1>
+                <p class="text-[#777]">
+                  The pinnacle of the range. A handcrafted twin-turbo V12
+                  delivers effortless power beneath a cabin built for those who
+                  are chauffeured, not just driven.
+                </p>
+              </div>
+            </div>
+            <div
+              id="src"
+              class="m-[40px] p-10 bg-white z-20 w-[400px] object-cover block rounded-xs ease-cubic-bezier(0.4, 0, 1, 1) transition-shadow transition-transform duration-300 hover:shadow-lg hover:scale-[1.05]"
+            >
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4TrvBbTj8wQHS51KYvJJ618ye_A0MgrolU33jnkYosg&s=10"
+                alt="Mercedes-AMG S63"
+                style="max-width: 100%; height: auto"
+              />
+              <div id="card">
+                <h1>S63 AMG</h1>
+                <p class="text-[#777]">
+                  Luxury meets raw performance. A twin-turbo V8 hybrid
+                  powertrain gives this full-size sedan sports-car acceleration
+                  without losing S-Class refinement.
+                </p>
+              </div>
+            </div>
+            <div
+              id="src"
+              class="m-[40px] p-10 bg-white z-20 w-[400px] object-cover block rounded-xs ease-cubic-bezier(0.4, 0, 1, 1) transition-shadow transition-transform duration-300 hover:shadow-lg hover:scale-[1.05]"
+            >
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbl_Mf_9GpAgUsR4iJ3uPsqDpMBJOGz1k072__wopQ1Rlsa8rmXntTL21z&s=10"
+                alt="Mercedes-Benz G-Class"
+                style="max-width: 100%; height: auto"
+              />
+              <div id="card">
+                <h1>G-Class</h1>
+                <p class="text-[#777]">
+                  An off-road icon since 1979. Its unmistakable boxy silhouette
+                  and ladder-frame chassis pair legendary trail capability with
+                  true luxury-SUV comfort.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end portfolio -->
 
-  <!-- start about -->
-  <div id="about" class="pt-[60px] pb-[60px] bg-[#f6f6f6] text-center">
-    <div id="container">
-      <h2 class="text-[#ebeced] text-8xl text-center font-extrabold tracking-wide m-5">Heritage</h2>
-      <p class="mt-[-30px] text-center text-[#797979]">Nearly a century under the three-pointed star</p>
-      <div class="about-flex mt-[80px]">
-        <div class="about-img-wrap m-[40px] p-10 before:absolute before:bg-[#10cab7] before:h-[100%] before:top-0 before:left-0 before:right-0 before:bottom-0 before:w-[100%] before:content['']">
-          <img class="max-w-full w-[500px] h-[275px]  object-cover block rounded-xs ease-cubic-bezier(0.4, 0, 1, 1) transition-shadow transition-transform duration-300 hover:shadow-lg hover:scale-[1.05]" style="position:relative; z-index:1;"
-            src="https://hips.hearstapps.com/hmg-prod/images/2023-mercedes-amg-c63-s-e-performance-118-65d7969b525e3.jpg?crop=0.742xw:0.628xh;0.207xw,0.204xh&resize=2048:*"
-            alt="Mercedes-AMG C63" />
-        </div>
-        <div class="text-left m-[40px]" style="flex:1; min-width:280px;">
-          <p>Mercedes-Benz traces its roots to the pioneering work of Karl Benz and Gottlieb Daimler in the 1880s, working independently just kilometers apart on the earliest gasoline-powered vehicles. Their two companies merged in 1926 to form Daimler-Benz, uniting the three-pointed star with the Benz laurel wreath into the emblem the world recognizes today.</p>
-          <hr/>
-          <p>For nearly a century since, the brand's philosophy has stayed the same: "Das Beste oder nichts" — the best or nothing. From the first Motorwagen to today's AMG performance models and Maybach flagships, every Mercedes-Benz is built on that same pursuit of excellence.</p>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- end about -->
-  <!-- start contact -->
-  <div id="contact" class="pt-[60px] pb-[60px] bg-[#f6f6f6] text-center">
-    <div id="container">
-      <h2 class="text-[#ebeced] text-8xl text-center font-extrabold tracking-wide m-5">Contact</h2>
-      <p class="mt-[-50px] text-center text-[#797979]">Get in touch with us</p>
-      <div class="mt-[80px] pt-[60px] pb-[60px] text-center">
-        <p class="text-3xl font-extrabold text-[#2c4755] ">For inquiries about our vehicles, services, or history, please reach out to us at:</p>
-        <div class="mt-[40px] text-lg">
-          <p>Email: <a href="mailto:chenitiseifelislam@gmail.com?subject=Contact"><span class="underline text-blue-600 hover:text-blue-800">chenitiseifelislam@gmail.com </span></a></p>
-          <p>Phone/WhatsApp: <a href="tel:+213559455987"><span class="underline text-blue-600 hover:text-blue-800"> +213-559-45-59-87</span></a></p>
-          <div class="flex justify-center items-center gap-6 mt-4">
-    <span class="text-sm font-medium gray-700">Found us in social media</span>
-    <div class="group relative flex flex-col items-center">
-        <a href="https://www.facebook.com/share/19PAE3bECD/" class="text-xl">
-            <i class="fa-brands fa-facebook"></i>
-        </a>
-        <span class="absolute top-8 scale-0 transition-all rounded bg-gray-800 p-2 text-xs text-white group-hover:scale-100 z-10 whitespace-nowrap">Facebook</span>
-    </div>
-    <div class="group relative flex flex-col items-center">
-        <a href="https://www.tiktok.com/@aboud5578?_r=1&_t=ZS-99OyfiSeMpW" class="text-xl">
-            <i class="fa-brands fa-tiktok"></i>
-        </a>
-        <span class="absolute top-8 scale-0 transition-all rounded bg-gray-800 p-2 text-xs text-white group-hover:scale-100 z-10 whitespace-nowrap">TikTok</span>
-    </div>
-    <div class="group relative flex flex-col items-center">
-        <a href="https://www.instagram.com/seif._.7?igsi=MWlhbWY3bTNmczl5Yw==" class="text-xl">
-            <i class="fa-brands fa-instagram"></i>
-        </a>
-        <span class="absolute top-8 scale-0 transition-all rounded bg-gray-800 p-2 text-xs text-white group-hover:scale-100 z-10 whitespace-nowrap">Instagram</span>
-    </div>
-</div>
+    <!-- start about -->
+    <div id="about" class="pt-[60px] pb-[60px] bg-[#f6f6f6] text-center">
+      <div id="container">
+        <h2
+          class="text-[#ebeced] text-8xl text-center font-extrabold tracking-wide m-5"
+        >
+          Heritage
+        </h2>
+        <p class="mt-[-30px] text-center text-[#797979]">
+          Nearly a century under the three-pointed star
+        </p>
+        <div class="about-flex mt-[80px]">
+          <div
+            class="about-img-wrap m-[40px] p-10 before:absolute before:bg-[#10cab7] before:h-[100%] before:top-0 before:left-0 before:right-0 before:bottom-0 before:w-[100%] before:content['']"
+          >
+            <img
+              class="max-w-full w-[500px] h-[275px] object-cover block rounded-xs ease-cubic-bezier(0.4, 0, 1, 1) transition-shadow transition-transform duration-300 hover:shadow-lg hover:scale-[1.05]"
+              style="position: relative; z-index: 1"
+              src="https://hips.hearstapps.com/hmg-prod/images/2023-mercedes-amg-c63-s-e-performance-118-65d7969b525e3.jpg?crop=0.742xw:0.628xh;0.207xw,0.204xh&resize=2048:*"
+              alt="Mercedes-AMG C63"
+            />
+          </div>
+          <div class="text-left m-[40px]" style="flex: 1; min-width: 280px">
+            <p>
+              Mercedes-Benz traces its roots to the pioneering work of Karl Benz
+              and Gottlieb Daimler in the 1880s, working independently just
+              kilometers apart on the earliest gasoline-powered vehicles. Their
+              two companies merged in 1926 to form Daimler-Benz, uniting the
+              three-pointed star with the Benz laurel wreath into the emblem the
+              world recognizes today.
+            </p>
+            <hr />
+            <p>
+              For nearly a century since, the brand's philosophy has stayed the
+              same: "Das Beste oder nichts" — the best or nothing. From the
+              first Motorwagen to today's AMG performance models and Maybach
+              flagships, every Mercedes-Benz is built on that same pursuit of
+              excellence.
+            </p>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-  <!-- end contact -->
-  <!-- start footer -->
-  <footer class="bg-[#2c4755] text-white py-10">
-    <div class="container mx-auto">
-      <p class="text-center">© 2026 Your Company. All rights reserved.</p>
+    <!-- end about -->
+    <!-- start contact -->
+    <div id="contact" class="pt-[60px] pb-[60px] bg-[#f6f6f6] text-center">
+      <div id="container">
+        <h2
+          class="text-[#ebeced] text-8xl text-center font-extrabold tracking-wide m-5"
+        >
+          Contact
+        </h2>
+        <p class="mt-[-50px] text-center text-[#797979]">
+          Get in touch with us
+        </p>
+        <div class="mt-[80px] pt-[60px] pb-[60px] text-center">
+          <p class="text-3xl font-extrabold text-[#2c4755]">
+            For inquiries about our vehicles, services, or history, please reach
+            out to us at:
+          </p>
+          <div class="mt-[40px] text-lg">
+            <p>
+              Email:
+              <a href="mailto:chenitiseifelislam@gmail.com?subject=Contact"
+                ><span class="underline text-blue-600 hover:text-blue-800"
+                  >chenitiseifelislam@gmail.com
+                </span></a
+              >
+            </p>
+            <p>
+              Phone/WhatsApp:
+              <a href="tel:+213559455987"
+                ><span class="underline text-blue-600 hover:text-blue-800">
+                  +213-559-45-59-87</span
+                ></a
+              >
+            </p>
+            <div class="flex justify-center items-center gap-6 mt-4">
+              <span class="text-sm font-medium gray-700"
+                >Found us in social media</span
+              >
+              <div class="group relative flex flex-col items-center">
+                <a
+                  href="https://www.facebook.com/share/19PAE3bECD/"
+                  class="text-xl"
+                >
+                  <i class="fa-brands fa-facebook"></i>
+                </a>
+                <span
+                  class="absolute top-8 scale-0 transition-all rounded bg-gray-800 p-2 text-xs text-white group-hover:scale-100 z-10 whitespace-nowrap"
+                  >Facebook</span
+                >
+              </div>
+              <div class="group relative flex flex-col items-center">
+                <a
+                  href="https://www.tiktok.com/@aboud5578?_r=1&_t=ZS-99OyfiSeMpW"
+                  class="text-xl"
+                >
+                  <i class="fa-brands fa-tiktok"></i>
+                </a>
+                <span
+                  class="absolute top-8 scale-0 transition-all rounded bg-gray-800 p-2 text-xs text-white group-hover:scale-100 z-10 whitespace-nowrap"
+                  >TikTok</span
+                >
+              </div>
+              <div class="group relative flex flex-col items-center">
+                <a
+                  href="https://www.instagram.com/seif._.7?igsi=MWlhbWY3bTNmczl5Yw=="
+                  class="text-xl"
+                >
+                  <i class="fa-brands fa-instagram"></i>
+                </a>
+                <span
+                  class="absolute top-8 scale-0 transition-all rounded bg-gray-800 p-2 text-xs text-white group-hover:scale-100 z-10 whitespace-nowrap"
+                  >Instagram</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-  </footer>
-   <script>
-    const icon = document.querySelector('.icon');
-    const menu = document.getElementById('nav-menu');
-    icon.addEventListener('click', () => {
-      menu.classList.toggle('hidden');
-      menu.classList.toggle('flex');
-    });
-  </script>
-</body>
+    <!-- end contact -->
+    <!-- start footer -->
+    <footer class="bg-[#2c4755] text-white py-10">
+      <div class="container mx-auto">
+        <p class="text-center">© 2026 Your Company. All rights reserved.</p>
+      </div>
+    </footer>
+    <script>
+      const icon = document.querySelector(".icon");
+      const menu = document.getElementById("nav-menu");
+      icon.addEventListener("click", () => {
+        menu.classList.toggle("hidden");
+        menu.classList.toggle("flex");
+      });
+    </script>
+  </body>
 </html>
