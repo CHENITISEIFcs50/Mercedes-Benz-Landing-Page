@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mercedes-Benz | Iconic Models</title>
     <!-- main template css file -->
     <link rel="stylesheet" href="css/leon.css" />
@@ -22,15 +22,6 @@
       crossorigin="anonymous"
     ></script>
 
-    <!--
-    ===================================================================
-    ملاحظة: هاذو القواعد يخدمو بـ !important قصدا. جربنا الـ flex/before/after
-    بواسطة Tailwind classes مرتين وماخدموش فالمتصفح الحقيقي متاعك (صورة السيرفيس
-    خرجت بالحجم الطبيعي، والـ about بقات column واحد، والمربع التركوازي ماطلعش).
-    هاذي القواعد تخدم أكيد مهما كان السبب (leon.css يتضارب، ولا Tailwind ماغلدش
-    الـ class). إذا بعتلي leon.css نقدر نلغي هاذ الـ !important وندير نسخة أنظف.
-    ===================================================================
-  -->
     <style>
       #leading {
         position: relative;
@@ -129,8 +120,6 @@
         </p>
       </div>
     </div>
-    <!-- end leading section -->
-
     <!-- start Features -->
     <div id="Features" class="pt-[60px] pb-[60px] px-[50px] bg-white">
       <div id="container" class="grid grid-cols-3 gap-4">
@@ -179,7 +168,7 @@
         </p>
         <div
           id="services-content"
-          class="grid grid-cols-[repeat(auto-fill,minmax(400px,1fr))] gap-4 mt-[100px]"
+          class="grid grid-cols-3 gap-4 mt-[100px]"
         >
           <div id="col" class="col-span-2 grid grid-cols-2 gap-3">
             <!-- start service -->
@@ -232,8 +221,6 @@
             id="col1"
             class="text-center relative after:content[''] z-20 w-[280px] object-cover block rounded-xs ease-cubic-bezier(0.4, 0, 1, 1) transition-shadow transition-transform duration-300 hover:shadow-lg hover:scale-[1.05]"
           >
-            <!-- ⚠️ هاذي كانت الصورة لي طلعت جبل كبير: الملف "photo_2026-07-30_19-15-03.jpg" في مسارك المحلي
-               راهو فعلا صورة جبل، ماشي سيارة. بدلها بصورة مرسيدس باش تبان صح، الحجم دابا محكوم فيه. -->
             <img
               src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVw_ZmyvzG6vweEqPWI_PV7FlC_-JJWz1osAmRLnWYPA&s=10"
               alt="Mercedes-Benz detail"
@@ -243,6 +230,7 @@
       </div>
     </div>
     <!-- end service -->
+
     <!-- start Portfolio -->
     <div id="portfolio" class="pt-[60px] pb-[60px] bg-[#f6f6f6] text-center">
       <div id="container">
@@ -257,7 +245,7 @@
         </p>
         <div
           id="portfolio-content"
-          class="grid grid-cols-[repeat(auto-fill,minmax(500px,1fr))] gap-3 mt-[80px]"
+          class="grid grid-cols-3 gap-3 mt-[80px]"
         >
           <div
             id="colm"
@@ -367,6 +355,7 @@
       </div>
     </div>
     <!-- end about -->
+
     <!-- start contact -->
     <div id="contact" class="pt-[60px] pb-[60px] bg-[#f6f6f6] text-center">
       <div id="container">
@@ -394,8 +383,7 @@
             </p>
             <p>
               Phone/WhatsApp:
-              <a href="tel:+213559455987"
-                ><span class="underline text-blue-600 hover:text-blue-800">
+              <a href="tel:+213559455987"><span class="underline text-blue-600 hover:text-blue-800">
                   +213-559-45-59-87</span
                 ></a
               >
@@ -413,8 +401,7 @@
                 </a>
                 <span
                   class="absolute top-8 scale-0 transition-all rounded bg-gray-800 p-2 text-xs text-white group-hover:scale-100 z-10 whitespace-nowrap"
-                  >Facebook</span
-                >
+                  >Facebook</span>
               </div>
               <div class="group relative flex flex-col items-center">
                 <a
@@ -446,12 +433,14 @@
       </div>
     </div>
     <!-- end contact -->
+
     <!-- start footer -->
     <footer class="bg-[#2c4755] text-white py-10">
       <div class="container mx-auto">
         <p class="text-center">© 2026 Your Company. All rights reserved.</p>
       </div>
     </footer>
+
     <script>
       const icon = document.querySelector(".icon");
       const menu = document.getElementById("nav-menu");
@@ -462,3 +451,4 @@
     </script>
   </body>
 </html>
+    <!-- end leading section -->
