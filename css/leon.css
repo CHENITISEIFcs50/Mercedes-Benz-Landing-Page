@@ -13,10 +13,6 @@ body {
     display: none;
   }
 } */
-body {
-  min-width: 1200px; /* حط هنا العرض تاع التصميم الأصلي تاعك */
-  overflow-x: auto;
-}
 @media (max-width: 768px) {
   #special-heading {
     font-size: 60px;
